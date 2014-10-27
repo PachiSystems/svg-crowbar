@@ -224,7 +224,7 @@
       if (element.tagName == 'text' || element.tagName == 'tspan') {
         computedStyleStr += 'font-size:'+cSSStyleDeclarationComputed.fontSize+';';
         var fw = cSSStyleDeclarationComputed.fontWeight,
-            ff = 'NYTFranklin' + (fw == 300 || fw == 'light' ? 'Light' : fw > 400 || fw == 'bold' ? 'Bold' : 'Medium');
+            ff = 'Arial' + (fw == 300 || fw == 'light' ? 'Light' : fw > 400 || fw == 'bold' ? 'Bold' : 'Medium');
         computedStyleStr += 'font-family:'+ff+';';
       }
       element.setAttribute('style', computedStyleStr);
